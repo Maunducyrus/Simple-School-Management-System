@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+    <h2>Student Registration</h2>
+    <form action="Register.php" method="POST">
+<div class="form-group">
+    <label for="name">Name:</label>
+    <input type="text" id="regNo" required>
+</div>
+<div class="form-group">
+<label for="email">Email:</label>
+<input type="text" id="email" name="email" required>
+</div>
+<div class="form-group">
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required>
+</div>
+<div class="form-group">
+    <label for="course">Course:</label>
+    <select id="course" name="course" required>
+        <option value="1">Computer Science</option>
+        <option value="2">Information Technology</option>
+        <option value="3">Software Engineering</option>
+        <option value="4">Information Communication Technology</option>
+    </select>
+</div>
+<button type="submit">Register</button>
+    </form>
+    <p>Already have an account? <a href="login.html">Login here</a></p>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
